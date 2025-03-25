@@ -183,7 +183,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + div {  
-    background-image: url("Уезжает пнг.png");
+    background-image: url("Father goes.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
