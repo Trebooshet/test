@@ -9,8 +9,6 @@ body {
     padding-top: 0;
     margin: 0;
     height: 100vh;
-
-
 }
 
 nav {
@@ -32,8 +30,6 @@ nav {
     width: 150px;
     height: 40px;
     text-align: center;
-    
-   
     background-color: antiquewhite;
     border-radius: 5px 5px 5px 5px ;
     color: #000;
@@ -63,7 +59,7 @@ h2 {
     font-weight: 900;
 }
 
- h3 {
+h3 {
     margin: 25px auto 15px;
     color: orange;
     font-family: 'Playfair Display', serif;
