@@ -153,6 +153,22 @@ label {
     font-size: 1.5em;
 }
 
+audio {
+    width: 90%;
+}
+
+.main-grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: rgb(48, 47, 47);
+   
+}
+
+.main-grid-footer *  {
+    background-color: rgb(36, 23, 95);
+}
+
 .form_btn {
     background-color: rgb(73, 73, 232);
     height: 40px;
@@ -160,15 +176,11 @@ label {
     margin: 15px auto;
     padding: 5px 15px;
     border-radius: 20px;
-    width: 25%;
+    width: auto;
     
 }
 
-audio {
-    width: 90%;
-}
-
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
     display: none;
 }
 
@@ -176,7 +188,7 @@ input[type="checkbox"] {
     display: inline-block;
     width: 1em;
     height: 1em;
-    border: 2px solid rgb(73, 73, 232);
+    border: 1px solid rgb(73, 73, 232);
     margin-bottom: -5px;
     background: #000;
     
@@ -189,11 +201,38 @@ input[type="checkbox"]:checked + div {
     background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:disabled + div {  
-    background: rgb(53, 53, 53);
+input[type="checkbox"]:disabled + div,
+input[type="radio"]:disabled + div {  
+    opacity: 50%;
    
 }
 
-label:has(input[type="checkbox"]:disabled)  {
-    color: rgb(84, 77, 67); 
+label:has(input[type="checkbox"]:disabled),  
+label:has(input[type="radio"]:disabled) {
+    opacity: 50%;
 }
+
+.main-grid-footer .question_radio {
+    grid-column: 2 / 3;
+}
+
+.custom_radio {
+    display: inline-block;
+    margin-bottom: -5px;
+    width: 1em;
+    height: 1em;
+    border: 1px solid rgb(73, 73, 232);
+    border-radius: 50%;
+    background: black;
+}
+
+input[type="radio"]:checked + div {
+background-image: url("Father comes.png");
+background-size: contain;
+background-size: 150%;
+background-position: center;
+background-position: -13px -5px;
+background-repeat: no-repeat;
+}
+
+
