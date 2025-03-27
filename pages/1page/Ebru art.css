@@ -1,0 +1,126 @@
+body {
+    margin: 70px 0 0;
+    box-sizing: border-box;
+    background-color: rgb(44, 43, 43);
+    height: 100%;
+    width: 100%;
+    color: white;
+    scroll-margin-top: 50px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 100;
+    font-size: larger;
+   
+}
+
+h1, h2 {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+    color:rgb(88, 183, 247);
+    text-shadow: 1px 1px 1px rgb(90, 14, 165),
+                -1px -1px 1px rgb(90, 14, 165);
+}
+
+h2:not(h2:nth-of-type(1)) {
+    margin: 50px auto;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: url(cat_hungry.png) 30px 50% / contain no-repeat, linear-gradient( #293f50, rgb(44, 43, 43));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 300;
+}
+
+.nav_element {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    background: linear-gradient(  rgb(91, 128, 147),rgb(55, 55, 92));
+    border-radius: 20px;
+
+    
+}
+
+.nav_element * {
+    
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.grid_vertical {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, calc((100vw - 100px)/4)));
+    grid-auto-rows: auto;
+    object-fit: contain;
+    grid-gap: 20px; 
+    padding: 0 20px;
+}
+
+.grid_horisontal  {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, calc((100vw - 80px)/3)));
+    grid-auto-rows: auto;
+    object-fit: contain;
+    grid-gap: 20px; 
+    padding: 0 20px;
+}
+
+.grid_vertical div, .grid_horisontal div {
+    background-color: rgb(55, 55, 92);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.grid_vertical img, .grid_horisontal img {
+width: 100%;
+overflow: hidden;
+border-radius: inherit;
+}
+
+.grid_vertical button, .grid_horisontal button {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 20px;
+    height: 30px;
+    color: white;
+    background: linear-gradient(to right bottom, rgb(50, 148, 246), rgb(16, 94, 172));
+    border: 1px solid rgb(96, 106, 243);
+    border-radius: 10px;
+}
+
+.name_ebru, .price_ebru {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+}
+
+.price {
+    color: rgb(7, 209, 7);
+}
+
+
+@media screen and (max-width: 1000px){
+    .grid_horisontal div, .grid_vertical{
+        font-size: 0.75em;
+    }
+}
+@media screen and (max-width: 500px){
+    .grid_horisontal div, .grid_vertical{
+        font-size: 0.5em;
+    }
+}
+
