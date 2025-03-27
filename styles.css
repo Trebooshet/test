@@ -195,11 +195,6 @@ audio {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     background-color: rgb(48, 47, 47);
-   
-}
-
-.main-grid-footer   {
-    background-color: rgb(36, 23, 95);
 }
 
 .form_btn {

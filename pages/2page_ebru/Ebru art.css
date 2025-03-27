@@ -1,15 +1,13 @@
 body {
-    margin: 70px 0 0;
+    margin: 70px 0 30px;
     box-sizing: border-box;
     background-color: rgb(44, 43, 43);
     height: 100%;
     width: 100%;
     color: white;
-    scroll-margin-top: 50px;
     font-family: 'EB Garamond', serif;
     font-weight: 100;
     font-size: larger;
-   
 }
 
 h1, h2 {
@@ -48,16 +46,16 @@ nav {
     text-align: center;
     background: linear-gradient(  rgb(91, 128, 147),rgb(55, 55, 92));
     border-radius: 20px;
-
     
 }
 
 .nav_element * {
-    
     text-decoration: none;
     font-size: 1.5em;
     color: #000;
 }
+
+
 
 .grid_vertical {
     display: grid;
@@ -67,6 +65,7 @@ nav {
     object-fit: contain;
     grid-gap: 20px; 
     padding: 0 20px;
+   
 }
 
 .grid_horisontal  {
@@ -83,6 +82,7 @@ nav {
     background-color: rgb(55, 55, 92);
     border-radius: 20px;
     overflow: hidden;
+   
 }
 
 .grid_vertical img, .grid_horisontal img {
@@ -100,6 +100,16 @@ border-radius: inherit;
     background: linear-gradient(to right bottom, rgb(50, 148, 246), rgb(16, 94, 172));
     border: 1px solid rgb(96, 106, 243);
     border-radius: 10px;
+}
+
+.grid_vertical > div:hover  {
+    transform: scale(1.04);
+    transition: 0.1s;
+}
+
+ .grid_horisontal > div:hover {
+    transform: scale(1.024);
+    transition: 0.1s;
 }
 
 .name_ebru, .price_ebru {
@@ -123,4 +133,11 @@ border-radius: inherit;
         font-size: 0.5em;
     }
 }
-
+ 
+iframe {
+    display: block;
+    width: 90%;
+    height: 450px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
