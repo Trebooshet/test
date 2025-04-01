@@ -147,8 +147,10 @@ grid-column-end: 3;
 .father-container {
     width: 90%;
     margin: auto;
-
 }
+
+.father-container img {
+    clip-path: polygon(60% 0, 79% 15%, 100% 22%, 89% 55%, 100% 100%, 55% 87%, 17% 96%, 23% 58%, 0 25%, 35% 19%);}
 
 .inner-grid div > img {
     width: 100%;
